@@ -15,3 +15,15 @@ console.log(idade);
 let possuiHobbies = true;
 console.log(possuiHobbies);
 // possuiHobbies = 1 (gera um erro por o tipo é boolen)
+
+// Tipos Explicitos
+// Quando o tipo não é imposto na declaração da variavel pode se atribuir qualquer tipo
+// Caso for especificado o tipo, não será permitido outro tipo
+
+let minhaIdade: number;
+
+minhaIdade = 27; // tipo number
+console.log(typeof minhaIdade);
+
+// minhaIdade = "idade 34"; // tipo string
+// console.log(typeof minhaIdade);
