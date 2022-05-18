@@ -27,3 +27,11 @@ console.log(typeof minhaIdade);
 
 // minhaIdade = "idade 34"; // tipo string
 // console.log(typeof minhaIdade);
+
+// Arrays
+
+// let hobbies = ["cozinhar"]; // array do tipo STRING, inferido automaticamente
+let hobbies: any[] = ["sair", 3]; // array do tipo ANY explicito
+let hobbiesString: string[] = ["cozinhar", "trabalhar"];
+console.log(typeof)
+console.log(hobbies);
