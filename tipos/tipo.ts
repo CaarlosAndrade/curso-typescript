@@ -86,3 +86,25 @@ console.log(carro); //  tipo string
 
 carro = { marca: "BMW", ano: 2019 };
 console.log(carro); // tipo object
+
+//                      ------  Usando tipos em funções  -------
+
+// atribuindo o tipo STRING a uma função que não possui parametros, o retorno é obrigatório uma string
+
+function retornaMeuNome(): string {
+  return nome;
+}
+
+// atribuindo o tipo VOID isso indica que a função não irá possuir nenhum retorno, apenas executará alguma rotina como o console.log()
+
+function digaOi(): void {
+  console.log("oi");
+}
+
+// atribuindo tipos aos parametros da função, é obrigatório que a função receba dois parametros do tipo NUMBER e retorne um NUMBER
+
+function multiplicar(num1: number, num2: number): number {
+  return num1 * num2;
+}
+
+console.log(multiplicar(2, 2));
