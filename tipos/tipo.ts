@@ -76,3 +76,13 @@ console.log(Cor.Amarelo);
 console.log(Cor.Vermelho);
 
 console.log(Cor.Cinza);
+
+//                      ------  Tipo Any  -------
+
+// o tipo da variavel pode ser trocado a qualquer momento no código, sem gerar erros de compilação
+
+let carro: any = "BMW";
+console.log(carro); //  tipo string
+
+carro = { marca: "BMW", ano: 2019 };
+console.log(carro); // tipo object
