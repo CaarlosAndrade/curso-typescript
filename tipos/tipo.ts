@@ -45,9 +45,34 @@ console.log(hobbies);
 //  -- Orderm dos elemetos
 //  -- Quantidade de elementos
 //  -- Tipo dos elementos
+//  -- subistitui o tipo do array
 
 let endereco: [string, number] = ["rua tal", 3];
 console.log(endereco);
 console.log(typeof endereco);
+console.log();
 
 // Quanlquer outra tentativa, gera um ero.
+
+//                      ------  Enun  -------
+
+//armazena valores pré definidos, apenas numeros
+
+enum Cor {
+  Cinza, // começa sempre no 0 e avança
+  verde = 100, // é possivel realizar alterações na sequencia o prox numero será 101
+  Azul,
+  Laranja = 3,
+  Amarelo,
+  Vermelho = 100, // é possivel ter valores repetidos
+}
+
+let minhaCor: Cor = Cor.verde;
+console.log(minhaCor);
+
+console.log(Cor.Azul);
+console.log(Cor.Laranja);
+console.log(Cor.Amarelo);
+console.log(Cor.Vermelho);
+
+console.log(Cor.Cinza);

@@ -32,7 +32,27 @@ console.log(hobbies);
 //  -- Orderm dos elemetos
 //  -- Quantidade de elementos
 //  -- Tipo dos elementos
+//  -- subistitui o tipo do array
 let endereco = ["rua tal", 3];
 console.log(endereco);
 console.log(typeof endereco);
+console.log();
 // Quanlquer outra tentativa, gera um ero.
+//                      ------  Enun  -------
+//armazena valores pré definidos, apenas numeros
+var Cor;
+(function (Cor) {
+    Cor[Cor["Cinza"] = 0] = "Cinza";
+    Cor[Cor["verde"] = 100] = "verde";
+    Cor[Cor["Azul"] = 101] = "Azul";
+    Cor[Cor["Laranja"] = 3] = "Laranja";
+    Cor[Cor["Amarelo"] = 4] = "Amarelo";
+    Cor[Cor["Vermelho"] = 100] = "Vermelho";
+})(Cor || (Cor = {}));
+let minhaCor = Cor.verde;
+console.log(minhaCor);
+console.log(Cor.Azul);
+console.log(Cor.Laranja);
+console.log(Cor.Amarelo);
+console.log(Cor.Vermelho);
+console.log(Cor.Cinza);
