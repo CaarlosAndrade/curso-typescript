@@ -120,3 +120,20 @@ let calculoComParametro: (x: number, y: number) => number; // a variavel calculo
 calculoComParametro = multiplicar; // a função multiplicar que possui a assinatura exatamente como o tipo da variavel pede pode ser atribuida, caso contrario, não.
 
 console.log(calculoComParametro(1, 2));
+
+//                      ------  Objetos e Tipos  -------
+
+let usuario = {
+  // tipo do objeto foi inferido automaticamente por seus parametros
+  nome: "carlos",
+  idade: 23,
+};
+
+// tornei o tipo dos parametros deste objeto explicito
+let usuario2: { nome: string; idade: number };
+
+// atribuindo os parametros que foram especificados, sem uma ordem pré definida
+usuario2 = {
+  idade: 12,
+  nome: "carlos",
+};
