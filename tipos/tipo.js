@@ -76,3 +76,9 @@ function multiplicar(num1, num2) {
     return num1 * num2;
 }
 console.log(multiplicar(2, 2));
+//                      ------  Funções como Tipo  -------
+// é possivel tipar uma variavel com a assinatura de uma função, parametros e retorno
+let calculo; // a variavel calulo precisa recber uma função que retorna um number
+let calculoComParametro; // a variavel calculo precisa receber uma função com dois parametros do tipo number com um retorno do  tipo number
+calculoComParametro = multiplicar; // a função multiplicar que possui a assinatura exatamente como o tipo da variavel pede pode ser atribuida, caso contrario, não.
+console.log(calculoComParametro(1, 2));
