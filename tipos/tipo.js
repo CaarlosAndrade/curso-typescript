@@ -88,10 +88,22 @@ let usuario = {
     nome: "carlos",
     idade: 23,
 };
-// tornei o tipo dos parametros deste objeto explicito
+// tornei o tipo dos parametros deste objeto explicito, que precisa ser respeitado na hora da atribuição de valor
 let usuario2;
 // atribuindo os parametros que foram especificados, sem uma ordem pré definida
 usuario2 = {
     idade: 12,
     nome: "carlos",
 };
+//                      ------  Desafio 1 -------
+// definindo um objeto funcionario que tem como parametros um array de string de supervisores e uma função bater ponto que recebe como parametro a hora e retorna uma string
+let Funcionario;
+Funcionario = {
+    supervisores: ["Adriana", "Fabiana", "Aline"],
+    baterPonto(hora) {
+        return hora <= 8 ? "Ponto normal" : "Fora do horário";
+    },
+};
+// utilizando a função para bater o ponto, passando um number como parametro
+console.log(Funcionario.baterPonto(2));
+console.log(Funcionario.supervisores);
