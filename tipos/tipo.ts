@@ -142,18 +142,25 @@ usuario2 = {
 
 // definindo um objeto funcionario que tem como parametros um array de string de supervisores e uma função bater ponto que recebe como parametro a hora e retorna uma string
 
-let Funcionario: {
+type Funcionario = {
   supervisores: string[];
   baterPonto: (hora: number) => string;
 };
 
-Funcionario = {
+let funcionario: Funcionario = {
   supervisores: ["Adriana", "Fabiana", "Aline"],
   baterPonto(hora: number): string {
     return hora <= 8 ? "Ponto normal" : "Fora do horário";
   },
 };
 
+let funcionario2: Funcionario = {
+  supervisores: ["Carlos", "nicoly"],
+  baterPonto(hora: number): string {
+    return hora <= 8 ? "Ponto normal" : "Fora do horário";
+  },
+};
+
 // utilizando a função para bater o ponto, passando um number como parametro
-console.log(Funcionario.baterPonto(2));
-console.log(Funcionario.supervisores);
+console.log(funcionario.baterPonto(2));
+console.log(funcionario.supervisores);
