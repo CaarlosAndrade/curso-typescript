@@ -138,7 +138,7 @@ usuario2 = {
   nome: "carlos",
 };
 
-//                      ------  Desafio 1 -------
+//                      ------  Desafio 1 / Tipos Personalizados -------
 
 // definindo um objeto funcionario que tem como parametros um array de string de supervisores e uma função bater ponto que recebe como parametro a hora e retorna uma string
 
@@ -164,3 +164,13 @@ let funcionario2: Funcionario = {
 // utilizando a função para bater o ponto, passando um number como parametro
 console.log(funcionario.baterPonto(2));
 console.log(funcionario.supervisores);
+
+//                      ------  Union Types -------
+
+// Aplicando o union type em uma varivel é possivel atribuir dois tipos a ela.
+
+let nota: string | number; // usando o operador PIPE, podemos definir os tipos
+
+// as duas situações são validas
+nota = 10;
+nota = "10";

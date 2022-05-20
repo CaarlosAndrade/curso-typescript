@@ -110,3 +110,9 @@ let funcionario2 = {
 // utilizando a função para bater o ponto, passando um number como parametro
 console.log(funcionario.baterPonto(2));
 console.log(funcionario.supervisores);
+//                      ------  Union Types -------
+// Aplicando o union type em uma varivel é possivel atribuir dois tipos a ela.
+let nota; // usando o operador PIPE, podemos definir os tipos
+// as duas situações são validas
+nota = 10;
+nota = "10";
